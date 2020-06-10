@@ -20,7 +20,6 @@ add_action( 'admin_menu', 'muga_plugin_menu' );
 
 function muga_plugin_menu() {
 	add_options_page( 'Marshall University Google Analytics', 'MU Google Analytics', 'manage_options', 'muga-plugin-settings-page', 'muga_plugin_settings_page' );
-
 	add_action( 'admin_init', 'muga_plugin_settings' );
 }
 
@@ -37,9 +36,7 @@ function muga_plugin_settings_page() {
 
 		<form method="post" action="options.php">
 			<?php settings_fields( 'muga-plugin-settings-group' ); ?>
-
 			<?php do_settings_sections( 'muga-plugin-settings-group' ); ?>
-
 			<table class="form-table">
 				<tr valign="top">
 					<th scope="row">Enter Your Google Tracking ID</th>
@@ -55,7 +52,6 @@ function muga_plugin_settings_page() {
 <?php }
 
 function mu_google_analytics() { ?>
-
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo esc_attr( get_option( 'google_tracking_id' ) ); ?>"></script>
 	<script>
