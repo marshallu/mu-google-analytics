@@ -1,6 +1,6 @@
 {
 	"name": "marshallu/mu-google-analytics",
-    "description": "Add Google Analytics Tracking ID to individual WordPress site.",
+    "description": "Add Google Analytics Tracking ID to individual WordPress site for Marshall.",
     "license": "mit",
 	"type": "wordpress-plugin",
     "require-dev": {
