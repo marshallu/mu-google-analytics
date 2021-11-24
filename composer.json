@@ -2,6 +2,7 @@
 	"name": "marshallu/mu-google-analytics",
     "description": "Add Google Analytics Tracking ID to individual WordPress site.",
     "license": "mit",
+	"type": "wordpress-plugin",
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.5",
         "wp-coding-standards/wpcs": "^2.3",
